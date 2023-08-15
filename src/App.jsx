@@ -1,7 +1,9 @@
+import LandingPage from "./components/pages/LandingPage";
+
 const App = () => {
   return (
     <div>
-      <h1>Book Store</h1>
+      <LandingPage />
     </div>
   )
 }

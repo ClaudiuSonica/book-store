@@ -1,0 +1,49 @@
+@import "../../../scss/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 2.19rem;
+  padding-block-end: .56rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.25rem;
+
+    .nav__search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.94rem;
+      padding-block: 0.44rem;
+      padding-inline-start: 0.94rem;
+      padding-inline-end: 3.75rem;
+      border-radius: 0.5rem;
+      background: #eaeaea;
+
+      img {
+        color: $textDark;
+      }
+
+      .search__input {
+        color: #828282;
+        text-align: center;
+        font-family: $nunito;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
