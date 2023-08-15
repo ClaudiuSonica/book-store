@@ -1,10 +1,16 @@
 import "./LandingPage.scss"
 import DesktopNav from "../atoms/desktopNav/DesktopNav";
+import Hero from "../molecules/hero/Hero";
 
 const LandingPage = () => {
   return (
     <div className="container">
-      <DesktopNav />
+      <header>
+        <DesktopNav />
+      </header>
+      <main>
+        <Hero />
+      </main>
     </div>
   )
 }

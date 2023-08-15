@@ -1,0 +1,62 @@
+@import "../../../scss/variables";
+
+.section__hero {
+  background-color: $bgDesktop;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 13.75rem;
+  position: relative;
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $textDark;
+    font-family: $mont;
+
+    .hero__title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: normal;
+      margin-block-end: 1.88rem;
+    }
+
+    .hero__description {
+      font-size: 1rem;
+      max-width: 41ch;
+      margin-block-end: 2.5rem;
+    }
+  }
+
+  .hero__books {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    img:first-child {
+      top: -4rem;
+      right: 13.42rem;
+      z-index: 3;
+    }
+
+    img:nth-child(2) {
+      top: -3.5rem;
+      right: 6.36rem;
+      z-index: 2;
+    }
+
+    img:last-child {
+      top: -2.5rem;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

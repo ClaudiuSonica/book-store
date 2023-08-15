@@ -38,7 +38,7 @@ const DesktopNav = () => {
         <div className="nav__favorite">
           <img src={favorite} alt="favorite" />
         </div>
-        <Button text="Basket" img={cart} />
+        <Button text="Basket" img={cart} className="button" />
       </div>
     </nav>
   );

@@ -6,15 +6,25 @@
   align-items: center;
   padding-block-start: 2.19rem;
   padding-block-end: .56rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
+  width: 87%;
+  margin-inline: auto;
+  background-color: $bgDesktop;
 
   &__left {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 6.25rem;
+
+    .nav__menu {
+      img {
+        color: $textDark;
+        cursor: pointer;
+      }
+    }
 
     .nav__search {
       display: flex;
@@ -29,6 +39,7 @@
 
       img {
         color: $textDark;
+        cursor: pointer;
       }
 
       .search__input {
@@ -45,5 +56,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+
+    img {
+      cursor: pointer;
+      color: $textDark;
+    }
   }
 }
