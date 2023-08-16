@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   margin-block-start: 9.94rem;
+  margin-block-end: 8.75rem;
   background-color: $bgDesktop;
 
   .cta__list {
@@ -13,13 +14,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2.5rem;
-
-    .nav__links {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2.5rem;
-    }
   }
 
   .cta__email {
@@ -37,4 +31,11 @@
       padding: .5rem 4.5625rem .5rem 1.5625rem;
     }
   }
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
 }

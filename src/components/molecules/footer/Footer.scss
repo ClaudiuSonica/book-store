@@ -1,0 +1,34 @@
+@import "../../../scss/variables";
+
+.footer {
+  background-color: $bgDesktop;
+  padding-block: 1.25rem;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(13, 8, 66, 0.10);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.12rem;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
