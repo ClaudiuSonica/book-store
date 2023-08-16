@@ -4,6 +4,7 @@ import Hero from "../molecules/hero/Hero";
 import TopSlider from "../molecules/topSlider/TopSlider";
 import RecSlider from "../molecules/recSlider/RecSlider";
 import NewsSlider from "../molecules/newsSlider/NewsSlider";
+import Cta from "../molecules/cta/Cta";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <TopSlider />
         <RecSlider />
         <NewsSlider />
+        <Cta />
       </main>
     </div>
   )

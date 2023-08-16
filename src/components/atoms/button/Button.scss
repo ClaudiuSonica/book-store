@@ -28,3 +28,16 @@
   background-color: $general;
   border-radius: 0.5rem;
 }
+
+.button__email {
+  color: $bgDesktop;
+  font-family: $nunito;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  padding-block: .44rem;
+  padding-inline: 3rem;
+  background-color: $general;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}

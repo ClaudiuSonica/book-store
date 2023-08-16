@@ -1,0 +1,40 @@
+@import "../../../scss/variables";
+
+.section__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: 9.94rem;
+  background-color: $bgDesktop;
+
+  .cta__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5rem;
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2.5rem;
+    }
+  }
+
+  .cta__email {
+    .email__title {
+      color: $textDark;
+      font-family: $nunito;
+      font-size: 1rem;
+      margin-block-end: 2.38rem;
+    }
+
+    input {
+      border-radius: 0.5rem 0rem 0rem 0.5rem;
+      border: 0.9px solid $general;
+      background: $bgDesktop;
+      padding: .5rem 4.5625rem .5rem 1.5625rem;
+    }
+  }
+}

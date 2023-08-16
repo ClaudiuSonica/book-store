@@ -6,7 +6,7 @@ const NewsSlider = () => {
 
     const { news } = data;
   return (
-    <section className="section__slider">
+    <section className="section__slider section __news">
       <h2 className="slider__title">
         {news.title}
       </h2>
