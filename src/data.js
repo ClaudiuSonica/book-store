@@ -41,6 +41,7 @@ const data = {
           "The House of Berethnet has ruled Inys for a thousand years. Still unwed, Queen Sabran...",
         img: "/assets/images/top-slider/top2.png",
         price: "$19.99",
+        oldPrice: "$30.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg",
       },
@@ -51,6 +52,7 @@ const data = {
           "True crime writer Wylie Lark doesn't mind being snowed in at the isolated farmhouse...",
         img: "/assets/images/top-slider/top3.png",
         price: "$20.50",
+        oldPrice: "$20.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg",
       },
@@ -61,6 +63,7 @@ const data = {
           "A relentless detective and a civilian genealogist solve a haunting cold case and launch...",
         img: "/assets/images/top-slider/top4.png",
         price: "$20.50",
+        oldPrice: "$29.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg",
       },
@@ -71,6 +74,7 @@ const data = {
           "Moriarty's shadow looms large. First, Charlotte's half brother disappears. Then, Lady Ingram...",
         img: "/assets/images/top-slider/top5.png",
         price: "$20.50",
+        oldPrice: "$19.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg",
       },
@@ -85,6 +89,7 @@ const data = {
         description: "Under the Skin, Linda Villarosa lays bare the forces in the American health-care system...",
         img: "/assets/images/recommended-slider/rec3.png",
         price: "$ 27.99",
+        oldPrice: "$32.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg"
       },
@@ -95,6 +100,7 @@ const data = {
           "Orphaned and expendable, Alina Starkov is a soldier who knows she may not survive her first...",
         img: "/assets/images/recommended-slider/rec4.png",
         price: "$15.50",
+        oldPrice: "$26.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg"
       },
@@ -104,6 +110,7 @@ const data = {
         description: "Six years after Rosemary's death from pneumonia, Sage, now sixteen, still misses her deeply...",
         img: "/assets/images/recommended-slider/rec5.png",
         price: "$18.99",
+        oldPrice: "$30.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg"
       },
@@ -113,6 +120,7 @@ const data = {
         description: "In the spirit of Paolo Bacigalupi and Laini Taylor, this futuristic star-crossed love story...",
         img: "/assets/images/recommended-slider/rec6.png",
         price: "$19.99",
+        oldPrice: "$30.99",
         cart: "/assets/images/icon.svg",
         wishlist: "/assets/images/favorite-fill.svg"
       }

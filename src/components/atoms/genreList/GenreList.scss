@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+
+select {
+  background-color: rgba(234, 234, 234, 0.9);
+  background-image: url(/assets/images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 10.48rem center;
+  background-size: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  color: $textDark;
+  font-size: 1rem;
+  font-family: $nunito;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(75px);
+  padding-block: 0.44rem;
+  padding-inline-start: 0.62rem;
+  padding-inline-end: 4.74rem;
+  margin-inline-start: 0.62rem;
+  margin-block-end: 1.25rem;
+
+  option {
+    color: $textDark;
+    font-size: 1rem;
+    font-family: $nunito;
+  }
+}

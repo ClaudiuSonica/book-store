@@ -50,14 +50,18 @@ a {
 // Reset form elements
 input,
 button,
-textarea,
-select {
+textarea {
   appearance: none;
   border-radius: 0;
   background: none;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+  outline: none;
+}
+
+select {
+  border: 0;
   outline: none;
 }
 
