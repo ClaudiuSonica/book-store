@@ -1,10 +1,10 @@
 @import "../../../scss/variables";
 
-.section__topSlider {
+.section__slider {
   background-color: $bgDesktop;
   margin-block-end: 5.62rem;
   
-  .topSlider__title {
+  .slider__title {
     color: $textDark;
     font-family: $mont;
     font-size: 1.5rem;
@@ -12,7 +12,7 @@
     margin-block-end: 1.25rem;
   }
 
-  .topSlider__books {
+  .slider__books {
     display: flex;
     justify-content: space-between;
     align-items: center;
