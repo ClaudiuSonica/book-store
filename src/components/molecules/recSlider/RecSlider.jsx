@@ -21,6 +21,7 @@ const RecSlider = () => {
               img={item.img}
               price={item.price}
               oldPrice={item.oldPrice}
+              button={true}
             />
           )
         })}

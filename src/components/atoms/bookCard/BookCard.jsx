@@ -5,7 +5,7 @@ import cart from "/assets/images/icon.svg";
 
 const BookCard = (props) => {
   return (
-    <div className="bookCard">
+    <div className={props.className ? props.className : "bookCard"}>
       <div className="bookCard__img">
         <img src={props.img} alt={props.title} />
       </div>
@@ -16,7 +16,7 @@ const BookCard = (props) => {
           <span className="details__price">{props.price}</span>
           <span className="details__oldPrice">{props.oldPrice}</span>
         </div>
-        <Button text="Add to basket" img={cart} className="button" />
+        {props.button && <Button text="Add to basket" img={cart} className="button" />}
       </div>
     </div>
   );

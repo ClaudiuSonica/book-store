@@ -1,28 +1,24 @@
-import "./Slider.scss";
+import "./NewsSlider.scss";
 import data from "../../../data";
-import GenreList from "../../atoms/genreList/GenreList";
 import BookCard from "../../atoms/bookCard/BookCard";
 
-const TopSlider = () => {
+const NewsSlider = () => {
 
-  const { top } = data;
+    const { news } = data;
   return (
     <section className="section__slider">
       <h2 className="slider__title">
-        {top.title}
+        {news.title}
       </h2>
-      <GenreList />
       <div className="slider__books">
-        {top.items.map(item => {
+        {news.items.map(item => {
           return (
             <BookCard
+              className="news__card"
               key={item.id}
               title={item.title}
               description={item.description}
               img={item.img}
-              price={item.price}
-              oldPrice={item.oldPrice}
-              button={true}
             />
           )
         })}
@@ -31,4 +27,4 @@ const TopSlider = () => {
   )
 }
 
-export default TopSlider;
+export default NewsSlider;

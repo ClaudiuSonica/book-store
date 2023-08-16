@@ -1,5 +1,6 @@
 const data = {
   news: {
+    title: "News",
     items: [
       {
         id: 1,

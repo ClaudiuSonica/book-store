@@ -1,0 +1,52 @@
+@import "../../../scss/variables";
+
+.news__card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  padding-block: 0.94rem;
+  padding-inline-start: 0.94rem;
+  padding-inline-end: 1.25rem;
+  background-color: $bgDesktop;
+  min-width: 48%;
+  margin-block-end: 1rem;
+  border-radius: 0.625rem;
+
+  &:hover {
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  }
+
+  img {
+    width: 7.6875rem;
+    height: 9.75rem;
+    border-radius: 0.3125rem;
+  }
+
+  h3 {
+    color: $textDark;
+    font-family: $mont;
+    font-size: 1rem;
+    padding: 0.62rem;
+    margin-block-end: 2.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 3.125rem;
+      height: 0.125rem;
+      background-color: $general;
+      position: absolute;
+      bottom: -.94rem;
+      left: .62rem;
+    }
+  }
+
+  p {
+    color: $textDark;
+    font-family: $nunito;
+    font-size: 0.875rem;
+  }
+}

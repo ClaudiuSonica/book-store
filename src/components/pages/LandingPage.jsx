@@ -3,6 +3,7 @@ import DesktopNav from "../atoms/desktopNav/DesktopNav";
 import Hero from "../molecules/hero/Hero";
 import TopSlider from "../molecules/topSlider/TopSlider";
 import RecSlider from "../molecules/recSlider/RecSlider";
+import NewsSlider from "../molecules/newsSlider/NewsSlider";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
         <Hero />
         <TopSlider />
         <RecSlider />
+        <NewsSlider />
       </main>
     </div>
   )
