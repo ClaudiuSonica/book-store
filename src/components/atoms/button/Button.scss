@@ -10,11 +10,12 @@
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  padding-block: .44rem;
-  padding-inline-start: .94rem;
+  padding-block: 0.44rem;
+  padding-inline-start: 0.94rem;
   padding-inline-end: 2.5rem;
   background-color: $general;
   border-radius: 0.5rem;
+  border: 1px solid $general;
 }
 
 .button__simple {
@@ -23,10 +24,11 @@
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  padding-block: .44rem;
+  padding-block: 0.44rem;
   padding-inline: 3rem;
   background-color: $general;
   border-radius: 0.5rem;
+  border: 1px solid $general;
 }
 
 .button__email {
@@ -35,9 +37,18 @@
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  padding-block: .44rem;
+  padding-block: 0.37rem;
   padding-inline: 3rem;
   background-color: $general;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  border: 1px solid $general;
+}
+
+button {
+  &:hover {
+    background-color: $bgDesktop;
+    color: $general;
+    transition: all 0.3s ease-in-out;
+  }
 }
