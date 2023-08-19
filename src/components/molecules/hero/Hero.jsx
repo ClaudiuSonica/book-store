@@ -20,9 +20,9 @@ const Hero = () => {
         <Button text="Subscribe" className="button__simple"/>
       </article>
       <div className="hero__books">
-        <img src={book1} alt="first book" />
-        <img src={book2} alt="second book" />
-        <img src={book3} alt="third book" />
+        <div className="books__img-f img"><img src={book1} alt="first book" /></div>
+        <div className="books__img-s img"><img src={book2} alt="second book" /></div>
+        <div className="books__img-t img"><img src={book3} alt="third book" /></div>
       </div>
     </section>
   );

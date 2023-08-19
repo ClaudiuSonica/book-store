@@ -36,28 +36,82 @@
     align-items: center;
     justify-content: center;
 
-    img {
+    .img {
       position: absolute;
       top: 0;
       right: 0;
-    }
+      
+      img {
+        transition: all .8s ease-in-out;
 
-    img:first-child {
+        &:hover {
+          &:hover {
+            transform: scale(0.97);
+          }
+        }
+      }
+    }
+    .books__img-f {
       top: -4rem;
       right: 13.42rem;
       z-index: 3;
+      border-radius: 0.125rem;
+      background: #dc4a5c;
+      height: 23.5rem;
+
+      & img {
+        box-shadow: 0px 0px 0px 0px rgba(128, 0, 38, 0.1),
+          0px 3px 6.999999523162842px 0px rgba(128, 0, 38, 0.1),
+          0px 13px 13px 0px rgba(128, 0, 38, 0.09),
+          0px 28.999998092651367px 17px 0px rgba(128, 0, 38, 0.05),
+          0px 52px 21px 0px rgba(128, 0, 38, 0.01),
+          0px 81px 23px 0px rgba(128, 0, 38, 0);
+      }
     }
 
-    img:nth-child(2) {
+    .books__img-s {
       top: -3.5rem;
       right: 6.36rem;
       z-index: 2;
+      border-radius: 0.13375rem;
+      background: #1e4470;
+      height: 21.5rem;
+      transition: all .8s ease-in-out;
+      &:hover {
+        translate: 3rem;
+      }
+
+      & img {
+        box-shadow: 0px 0px 0px 0px rgba(0, 12, 102, 0.1),
+          0px 2px 5px 0px rgba(0, 12, 102, 0.1),
+          -1px 9px 9px 0px rgba(0, 12, 102, 0.09),
+          -1px 20px 12px 0px rgba(0, 12, 102, 0.05),
+          -2px 35px 14px 0px rgba(0, 12, 102, 0.01),
+          -3px 54px 15px 0px rgba(0, 12, 102, 0);
+      }
     }
 
-    img:last-child {
+    .books__img-t {
       top: -2.5rem;
       right: 0;
       z-index: 1;
+      border-radius: 0.15375rem;
+      background: #309794;
+      height: 18.5rem;
+      transition: all .8s ease-in-out;
+      &:hover {
+        translate: 4rem;
+      }
+
+      & img {
+        box-shadow: 0px 0px 0px 0px rgba(12, 0, 102, 0.1),
+          0px 3px 6px 0px rgba(12, 0, 102, 0.1),
+          0px 9.999999046325684px 9.999999046325684px 0px rgba(12, 0, 102, 0.09),
+          0px 22.999998092651367px 14px 0px rgba(12, 0, 102, 0.05),
+          0px 39.999996185302734px 15.999999046325684px 0px
+            rgba(12, 0, 102, 0.01),
+          0px 63px 18px 0px rgba(12, 0, 102, 0);
+      }
     }
   }
 }
