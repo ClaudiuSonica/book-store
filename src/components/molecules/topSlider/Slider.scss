@@ -3,20 +3,63 @@
 .section__slider {
   background-color: $bgDesktop;
   margin-block-end: 5.62rem;
-  
+
   .slider__title {
     color: $textDark;
     font-family: $mont;
     font-size: 1.5rem;
-    padding: .62rem;
+    padding: 0.62rem;
     margin-block-end: 1.25rem;
   }
 
   .slider__books {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.5rem;
-    overflow-x: scroll;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0); 
+
+    .slider {
+      display: flex;
+      transition: transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+
+      .slider-inner {
+        display: flex;
+
+        .slider-card {
+          flex: 0 0 35%;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      font-weight: 900;
+      border: none;
+      background-color: $bgDesktop;
+      color: $textDark;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: opacity 0.3s ease-in-out;
+      width: 2.375rem;
+      height: 2.375rem;
+      flex-shrink: 0;
+      filter: drop-shadow(0px 0px 0px rgba(13, 8, 66, 0.10)) drop-shadow(-0.8444444537162781px 0.8444444537162781px 1.6888889074325562px rgba(13, 8, 66, 0.10)) drop-shadow(-2.5333333015441895px 1.6888889074325562px 3.3777778148651123px rgba(13, 8, 66, 0.09)) drop-shadow(-5.911111354827881px 4.222222328186035px 4.222222328186035px rgba(13, 8, 66, 0.05)) drop-shadow(-10.133333206176758px 7.599999904632568px 5.066666603088379px rgba(13, 8, 66, 0.01)) drop-shadow(-16.044445037841797px 11.822222709655762px 5.911111354827881px rgba(13, 8, 66, 0.00));
+
+      &.prev-button {
+        left: 0;
+      }
+
+      &.next-button {
+        right: 0;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }

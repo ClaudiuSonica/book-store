@@ -1,5 +1,17 @@
 @import "../../../scss/variables";
 
+.section__slider {
+  .slider__books {
+    .slider {
+      .slider-inner {
+        .slider__card__news {
+          flex: 0 0 50%;
+        }
+      }
+    }
+  }
+}
+
 .news__card {
   display: flex;
   flex-direction: row-reverse;
@@ -10,15 +22,14 @@
   padding-inline-start: 0.94rem;
   padding-inline-end: 1.25rem;
   background-color: $bgDesktop;
-  min-width: 48%;
   margin-block-end: 1rem;
   border-radius: 0.625rem;
 
   &:hover {
-    box-shadow: 0px 0.5rem .2rem rgba(0, 0, 0, 0.25);
-    
+    box-shadow: 0px 0.5rem 0.2rem rgba(0, 0, 0, 0.25);
+
     img {
-      transition: all .8s ease-in-out;
+      transition: all 0.8s ease-in-out;
       transform: scale(1.1);
     }
   }
@@ -44,8 +55,8 @@
       height: 0.125rem;
       background-color: $general;
       position: absolute;
-      bottom: -.94rem;
-      left: .62rem;
+      bottom: -0.94rem;
+      left: 0.62rem;
     }
   }
 
