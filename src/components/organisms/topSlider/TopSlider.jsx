@@ -1,7 +1,7 @@
 import "./Slider.scss";
 import data from "../../../data";
 import GenreList from "../../atoms/genreList/GenreList";
-import BookCard from "../../atoms/bookCard/BookCard";
+import BookCard from "../../molecules/bookCard/BookCard";
 import { useState } from "react";
 
 const TopSlider = () => {

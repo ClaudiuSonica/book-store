@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./BookCard.scss";
-import Button from "../button/Button";
+import Button from "../../atoms/button/Button";
 import cart from "/assets/images/icon.svg";
 
 const BookCard = (props) => {

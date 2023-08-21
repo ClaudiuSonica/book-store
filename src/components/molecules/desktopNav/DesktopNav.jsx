@@ -5,7 +5,7 @@ import user from "/assets/images/account.svg";
 import cart from "/assets/images/icon.svg";
 import favorite from "/assets/images/favorite.svg";
 import { useState } from "react";
-import Button from "../button/Button";
+import Button from "../../atoms/button/Button";
 
 const DesktopNav = () => {
   const [searchInput, setSearchInput] = useState("");

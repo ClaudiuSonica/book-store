@@ -1,6 +1,6 @@
 import "./NewsSlider.scss";
 import data from "../../../data";
-import BookCard from "../../atoms/bookCard/BookCard";
+import BookCard from "../../molecules/bookCard/BookCard";
 import { useState } from "react";
 
 const NewsSlider = () => {

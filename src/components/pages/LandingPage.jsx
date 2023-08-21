@@ -1,10 +1,10 @@
 import "./LandingPage.scss"
-import DesktopNav from "../atoms/desktopNav/DesktopNav";
+import DesktopNav from "../molecules/desktopNav/DesktopNav";
 import Hero from "../molecules/hero/Hero";
-import TopSlider from "../molecules/topSlider/TopSlider";
-import RecSlider from "../molecules/recSlider/RecSlider";
-import NewsSlider from "../molecules/newsSlider/NewsSlider";
-import Cta from "../molecules/cta/Cta";
+import TopSlider from "../organisms/topSlider/TopSlider";
+import RecSlider from "../organisms/recSlider/RecSlider";
+import NewsSlider from "../organisms/newsSlider/NewsSlider";
+import Cta from "../organisms/cta/Cta";
 import Footer from "../molecules/footer/Footer";
 
 const LandingPage = () => {
