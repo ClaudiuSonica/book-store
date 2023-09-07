@@ -1,0 +1,64 @@
+@import "../../../scss/variables";
+
+.mobile__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .footer__books {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+    .books__img {
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    background: linear-gradient(285deg, #FEAF38 48.52%, #FFCE1A 100.93%);
+    width: 100%;
+    padding-block-start: 1.25rem;
+
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: .9rem;
+
+      .nav__item {
+        & a {
+          color: $textLight;
+          font-size: 1rem;
+          font-family: $nunito;
+          font-weight: 600;
+          text-align: center;
+          letter-spacing: 0.02;
+        }
+      }
+    }
+
+    .footer__socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.12rem;
+      padding-block-end: 1.25rem;
+
+      & img {
+        & svg {
+          stroke: $textLight;
+        }
+      }
+    }
+  }
+}

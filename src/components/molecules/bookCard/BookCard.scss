@@ -64,5 +64,23 @@
         text-decoration: line-through;
       }
     }
+
+    .details__images {
+      display: flex;
+      align-items: center;
+      gap: .62rem;
+
+      .cart__simple {
+        padding: .3rem;
+        transition: all .5s ease;
+      }
+
+      .cart__active {
+        background-color: $general;
+        padding: .3rem;
+        border-radius: 50%;
+        transition: all .5s ease;
+      }
+    }
   }
 }

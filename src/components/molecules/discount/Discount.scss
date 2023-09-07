@@ -1,0 +1,26 @@
+@import "../../../scss/variables";
+
+.section__discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .94rem;
+  margin-block-start: 5rem;
+
+  .discount__title {
+    text-align: center;
+    color: $textDark;
+    font-family: $mont;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .discount__description {
+    text-align: center;
+    color: rgba(13, 8, 66, 0.52);
+    font-family: $nunito;
+    font-size: .75rem;
+    margin-block-end: 1.25rem;
+  }
+}

@@ -8,7 +8,7 @@ const Footer = () => {
 
   const navItems = ["Privacy Policy", "Terms of use", "Sales and refunds", "Legal"];
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="container footer__container">
         <div className="nav__links">
           {navItems.map(navItem => (
@@ -21,7 +21,7 @@ const Footer = () => {
           <img src={facebook} alt="facebook" />
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

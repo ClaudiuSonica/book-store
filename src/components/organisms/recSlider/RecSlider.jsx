@@ -1,12 +1,15 @@
+/* eslint-disable react/prop-types */
 import "../topSlider/Slider.scss";
 import data from "../../../data";
 import BookCard from "../../molecules/bookCard/BookCard";
 import { useState } from "react";
 
-const RecSlider = () => {
+const RecSlider = ({ width, desktop }) => {
   const { recommended } = data;
   const [startIndex, setStartIndex] = useState(0);
   const cardsPerPage = 2; // Number of cards to show per slide
+
+  const mobile = width < desktop;
 
   const handlePrevClick = () => {
     setStartIndex(Math.max(startIndex - cardsPerPage, 0));
@@ -14,12 +17,16 @@ const RecSlider = () => {
 
   const handleNextClick = () => {
     setStartIndex(
-      Math.min(startIndex + cardsPerPage, recommended.items.length - cardsPerPage)
+      Math.min(
+        startIndex + cardsPerPage,
+        recommended.items.length - cardsPerPage
+      )
     );
   };
 
   const shouldShowPrevButton = startIndex > 0;
-  const shouldShowNextButton = startIndex + cardsPerPage < recommended.items.length;
+  const shouldShowNextButton =
+    startIndex + cardsPerPage < recommended.items.length;
 
   return (
     <section className="section__slider">
@@ -37,7 +44,8 @@ const RecSlider = () => {
                   img={item.img}
                   price={item.price}
                   oldPrice={item.oldPrice}
-                  button={true}
+                  button={mobile ? false : true}
+                  mobile={mobile}
                 />
               </div>
             ))}

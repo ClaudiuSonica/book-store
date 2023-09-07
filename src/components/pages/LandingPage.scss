@@ -1,16 +1,23 @@
 @import "../../scss/variables";
 
-// .container {
-//   @media (max-width: $md) {
-//     padding-inline: 1rem;
-//   }
+body {
+  @media (max-width: $md) {
+    background-color: $bgMobile;
+  }
 
-//   padding-inline: 6.25rem;
-// }
+  background-color: $bgDesktop;
+}
+
 header, main, footer {
   @media (max-width: $sm) {
     padding-inline: 1rem;
   }
 
   padding-inline: 6.25rem;
+}
+
+footer {
+  @media (max-width: $md) {
+    padding-inline: 0;
+  }
 }

@@ -1,14 +1,17 @@
+/* eslint-disable react/prop-types */
 import "./Slider.scss";
 import data from "../../../data";
 import GenreList from "../../atoms/genreList/GenreList";
 import BookCard from "../../molecules/bookCard/BookCard";
 import { useState } from "react";
 
-const TopSlider = () => {
+const TopSlider = ({width, desktop}) => {
   const { top } = data;
 
   const [startIndex, setStartIndex] = useState(0);
   const cardsPerPage = 2; // Number of cards to show per slide
+
+  const mobile = width < desktop;
 
   const handlePrevClick = () => {
     setStartIndex(Math.max(startIndex - cardsPerPage, 0));
@@ -40,7 +43,8 @@ const TopSlider = () => {
                   img={item.img}
                   price={item.price}
                   oldPrice={item.oldPrice}
-                  button={true}
+                  button={mobile ? false : true}
+                  mobile={mobile}
                 />
               </div>
             ))}

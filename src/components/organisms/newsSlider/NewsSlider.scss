@@ -5,10 +5,20 @@
     .slider {
       .slider-inner {
         .slider__card__news {
+          @media (max-width: $md) {
+            flex: 0 0 40%;
+          }
+
           flex: 0 0 50%;
         }
       }
     }
+  }
+}
+
+.news__title {
+  @media (max-width: $md) {
+    display: none;
   }
 }
 
@@ -35,7 +45,13 @@
   }
 
   img {
-    width: 7.6875rem;
+    @media (max-width: $md) {
+      width: 6.7rem;
+      height: 9rem;
+      flex-shrink: 0;
+    }
+
+    width: 7.7rem;
     height: 9.75rem;
     border-radius: 0.3125rem;
   }

@@ -23,7 +23,7 @@ const NewsSlider = () => {
 
   return (
     <section className="section__slider">
-      <h2 className="slider__title">{news.title}</h2>
+      <h2 className="slider__title news__title">{news.title}</h2>
       <div className="slider__books">
         <div className="slider">
           <div

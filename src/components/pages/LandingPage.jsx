@@ -7,6 +7,8 @@ import RecSlider from "../organisms/recSlider/RecSlider";
 import NewsSlider from "../organisms/newsSlider/NewsSlider";
 import Cta from "../organisms/cta/Cta";
 import Footer from "../molecules/footer/Footer";
+import Discount from "../molecules/discount/Discount";
+import MobileFooter from "../molecules/mobileFooter/MobileFooter";
 import { useState, useEffect } from "react";
 
 const LandingPage = () => {
@@ -23,22 +25,36 @@ const LandingPage = () => {
     };
   }, []);
 
+  const desktopWidth = 768;
+
   return (
     <>
       <header className="container">
-        {windowWidth < 768
-          ? <MobileNav />
-          : <DesktopNav />}
+        {windowWidth < desktopWidth ? <MobileNav /> : <DesktopNav />}
       </header>
       <main className="container">
-        <Hero />
-        <TopSlider />
-        <RecSlider />
-        <NewsSlider />
-        <Cta />
+        {windowWidth < desktopWidth ? (
+          <NewsSlider />
+        ) : (
+          <Hero />
+        )}
+        <TopSlider
+          width={windowWidth}
+          desktop={desktopWidth}
+        />
+        <RecSlider
+          width={windowWidth}
+          desktop={desktopWidth}
+        />
+        {windowWidth < desktopWidth
+          ? <Discount />
+          : <NewsSlider />}
+        {windowWidth < desktopWidth ?? <Cta />}
       </main>
       <footer>
-        <Footer />
+        {windowWidth < desktopWidth
+          ? <MobileFooter />
+          : <Footer />}
       </footer>
     </>
   );
