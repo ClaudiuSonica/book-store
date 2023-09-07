@@ -1,7 +1,7 @@
 import "./MobileNav.scss";
 import menu from "/assets/images/menu.svg";
 import search from "/assets/images/search-icon.svg";
-import cart from "/assets.images/icon.svg";
+import cart from "/assets/images/cart-black.svg";
 import { useState } from "react";
 
 const MobileNav = () => {
@@ -12,7 +12,7 @@ const MobileNav = () => {
   }
 
   return (
-    <nav className="nav">
+    <nav className="nav__mobile">
       <div className="nav__menu">
         <img src={menu} alt="menu" />
       </div>

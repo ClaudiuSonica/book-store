@@ -1,6 +1,16 @@
 @import "../../scss/variables";
 
-.container {
-  width: 87%;
-  margin-inline: auto;
+// .container {
+//   @media (max-width: $md) {
+//     padding-inline: 1rem;
+//   }
+
+//   padding-inline: 6.25rem;
+// }
+header, main, footer {
+  @media (max-width: $sm) {
+    padding-inline: 1rem;
+  }
+
+  padding-inline: 6.25rem;
 }

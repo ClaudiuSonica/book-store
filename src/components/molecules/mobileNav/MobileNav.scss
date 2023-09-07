@@ -1,7 +1,74 @@
 @import "../../../scss/variables";
 
-.nav {
+header {
+  display: flex;
+}
+
+.nav__mobile {
+  @media (max-width: 320px) {
+    width: 98%;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 1;
+  padding-block-start: 2.8rem;
+  padding-block-end: 1.25rem;
+  width: 100%;
+  padding-inline: 6.25rem;
+  background-color: $bgDesktop;
+
+  .nav__menu {
+    img {
+      width: 1.5rem;
+      height: 1rem;
+      color: $textDark;
+      cursor: pointer;
+    }
+  }
+
+  .nav__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-shrink: 1;
+    padding-block: 0.44rem;
+    padding-inline-start: 0.94rem;
+    padding-inline-end: 1rem;
+    border-radius: 0.5rem;
+    background: #eaeaea;
+
+    img {
+      width: .8rem;
+      height: 1rem;
+      color: $textDark;
+      cursor: pointer;
+    }
+
+    .search__input {
+      min-width: 5rem;
+      color: #828282;
+      text-align: center;
+      font-family: $nunito;
+      font-size: .8rem;
+    }
+  }
+
+  .nav__cart {
+    img {
+      width: 1.4rem;
+      height: 1.5rem;
+      color: $textDark;
+      cursor: pointer;
+    }
+  }
 }
