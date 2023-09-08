@@ -17,7 +17,7 @@ header, main, footer {
 }
 
 footer {
-  @media (max-width: $md) {
+  @media (max-width: $sm) {
     padding-inline: 0;
   }
 }

@@ -1,6 +1,10 @@
 @import "../../../scss/variables";
 
 .nav__link {
+  @media (max-width: $lg) {
+    font-size: .5rem;
+  }
+
   color: $textDark;
   font-family: $nunito;
   font-size: 1.125rem;
